@@ -21,7 +21,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
-    id="com.logilite.VISion.Camera"
+    id="com.logilite.vision.camera"
     version="0.2.9">
     <name>Camera</name>
     <description>Cordova Camera Plugin</description>
@@ -61,16 +61,16 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Camera">
-                <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+                <param name="android-package" value="com.logilite.vision.CameraLauncher"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
 
-        <source-file src="src/android/CameraLauncher.java" target-dir="src/org/apache/cordova/camera" />
-        <source-file src="src/android/FileHelper.java" target-dir="src/org/apache/cordova/camera" />
-        <source-file src="src/android/ExifHelper.java" target-dir="src/org/apache/cordova/camera" />
+        <source-file src="src/android/CameraLauncher.java" target-dir="src/com/logilite/vision/camera" />
+        <source-file src="src/android/FileHelper.java" target-dir="src/com/logilite/vision/camera" />
+        <source-file src="src/android/ExifHelper.java" target-dir="src/com/logilite/vision/camera" />
 
         <js-module src="www/CameraPopoverHandle.js" name="CameraPopoverHandle">
             <clobbers target="CameraPopoverHandle" />
@@ -82,16 +82,16 @@
     <platform name="amazon-fireos">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Camera">
-                <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+                <param name="android-package" value="com.logilite.vision.camera.CameraLauncher"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
 
-        <source-file src="src/android/CameraLauncher.java" target-dir="src/org/apache/cordova/camera" />
-        <source-file src="src/android/FileHelper.java" target-dir="src/org/apache/cordova/camera" />
-        <source-file src="src/android/ExifHelper.java" target-dir="src/org/apache/cordova/camera" />
+        <source-file src="src/android/CameraLauncher.java" target-dir="src/com/logilite/vision/camera" />
+        <source-file src="src/android/FileHelper.java" target-dir="src/com/logilite/vision/camera" />
+        <source-file src="src/android/ExifHelper.java" target-dir="src/com/logilite/vision/camera" />
 
         <js-module src="www/CameraPopoverHandle.js" name="CameraPopoverHandle">
             <clobbers target="CameraPopoverHandle" />

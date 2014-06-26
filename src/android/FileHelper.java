@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
  */
-package org.apache.cordova.camera;
+package com.logilite.vision.camera;
 
 import android.database.Cursor;
 import android.net.Uri;

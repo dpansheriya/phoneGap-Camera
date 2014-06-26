@@ -27,7 +27,7 @@
     <description>Cordova Camera Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,camera</keywords>
-    <repo> https://bitbucket.org/dpansheriya/phonegap-camera.git</repo>
+    <repo>https://github.com/dpansheriya/phoneGap-Camera.git</repo>
     <issue> </issue>
 
     <js-module src="www/CameraConstants.js" name="Camera">
